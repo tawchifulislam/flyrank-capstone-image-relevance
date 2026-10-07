@@ -151,6 +151,7 @@ Every vision and embedding call writes a row to `cost_log` and is visible at `GE
 - **Small corpus.** 54 images, animals only, 5 main categories. Species detection only knows species present in the corpus.
 - **Scale.** Vectors are stored as arrays and compared in application code. That is fine at this size and not for thousands of images, where pgvector would be the next step.
 - **No frontend and no authentication.** The review workflow is API only.
+- **Single tenant.** One shared image library and one set of posts. There is no tenant isolation.
 
 ## Repository layout
 
