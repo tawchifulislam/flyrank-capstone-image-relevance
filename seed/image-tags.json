@@ -1,0 +1,876 @@
+[
+  {
+    "file_path": "corpus/img_001.jpg",
+    "subject": "coyote",
+    "category": "animal",
+    "species": "coyote",
+    "attributes": [
+      "grey and tan fur",
+      "standing",
+      "alert",
+      "pointed ears",
+      "bushy coat",
+      "looking at camera"
+    ],
+    "caption": "A coyote stands in front of a dark wooded background looking forward.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_002.jpg",
+    "subject": "deer",
+    "category": "animal",
+    "species": "deer",
+    "attributes": [
+      "grazing",
+      "antlers",
+      "brown fur",
+      "meadow",
+      "wild",
+      "two deer"
+    ],
+    "caption": "Two deer graze in a grassy meadow with Half Dome rising prominently in the background.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_003.jpg",
+    "subject": "red fox",
+    "category": "animal",
+    "species": "fox",
+    "attributes": [
+      "orange fur",
+      "white chest",
+      "pointed ears",
+      "bushy tail",
+      "standing on snow",
+      "golden hour light"
+    ],
+    "caption": "A red fox stands attentively on a snowy surface in the warm sunlight.",
+    "confidence": 0.99
+  },
+  {
+    "file_path": "corpus/img_004.jpg",
+    "subject": "white-tailed deer",
+    "category": "animal",
+    "species": "deer",
+    "attributes": [
+      "antlers",
+      "buck",
+      "standing",
+      "golden hour light",
+      "brown fur",
+      "alert"
+    ],
+    "caption": "A white-tailed deer buck stands in a field bathed in warm golden hour sunlight.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_005.jpg",
+    "subject": "arctic wolf",
+    "category": "animal",
+    "species": "wolf",
+    "attributes": [
+      "white fur",
+      "standing",
+      "rocky ledge",
+      "winter background",
+      "bare branches",
+      "alert posture"
+    ],
+    "caption": "A white wolf stands proudly atop a snow-dusted rock against a backdrop of winter trees.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_006.jpg",
+    "subject": "brown bear",
+    "category": "animal",
+    "species": "bear",
+    "attributes": [
+      "brown fur",
+      "shaggy coat",
+      "sitting",
+      "side profile",
+      "forest background",
+      "attentive"
+    ],
+    "caption": "A large brown bear sits peacefully in an outdoor environment with a blurred forest background.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_007.jpg",
+    "subject": "nova scotia duck tolling retriever",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "red-coated",
+      "splashing",
+      "playful",
+      "fluffy",
+      "running",
+      "wearing collar",
+      "wet paws"
+    ],
+    "caption": "A joyful reddish-brown dog runs through breaking waves onto a pebbly beach.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_008.jpg",
+    "subject": "nova scotia duck tolling retriever",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "golden-brown fur",
+      "panting",
+      "pink tongue out",
+      "fluffy ears",
+      "looking up",
+      "happy expression",
+      "outdoor portrait"
+    ],
+    "caption": "A cheerful golden-brown dog looks upward with its tongue out on an outdoor path.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_009.jpg",
+    "subject": "fawn",
+    "category": "animal",
+    "species": "deer",
+    "attributes": [
+      "spotted coat",
+      "large ears",
+      "standing alert",
+      "raised front leg",
+      "young",
+      "slender",
+      "brown and white"
+    ],
+    "caption": "A young spotted fawn stands alertly with one front leg raised at the edge of a wooded area.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_010.jpg",
+    "subject": "brown bear",
+    "category": "animal",
+    "species": "bear",
+    "attributes": [
+      "large",
+      "brown fur",
+      "backlit",
+      "walking",
+      "looking forward",
+      "wild"
+    ],
+    "caption": "A large brown bear walks through a grassy clearing in a forest.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_011.jpg",
+    "subject": "brown bear",
+    "category": "animal",
+    "species": "bear",
+    "attributes": [
+      "large",
+      "brown",
+      "furry",
+      "walking",
+      "wild",
+      "muscular"
+    ],
+    "caption": "A large brown bear walks across a clearing near a pine forest.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_012.jpg",
+    "subject": "golden retriever",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "golden fur",
+      "happy expression",
+      "panting",
+      "lying down",
+      "wearing harness",
+      "fluffy coat"
+    ],
+    "caption": "A cheerful golden retriever lies comfortably in a lush green meadow filled with small white flowers.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_013.jpg",
+    "subject": "brown bear",
+    "category": "animal",
+    "species": "bear",
+    "attributes": [
+      "walking",
+      "brown fur",
+      "thick coat",
+      "large",
+      "autumn vegetation",
+      "boreal forest"
+    ],
+    "caption": "A large brown bear walks through a grassy marshland in a boreal forest.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_014.jpg",
+    "subject": "jack russell terrier",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "tricolor",
+      "brown eyes",
+      "floppy ears",
+      "close-up",
+      "pink background",
+      "alert expression",
+      "studio portrait"
+    ],
+    "caption": "A close-up studio portrait of a tricolor Jack Russell terrier against a soft pink background.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_015.jpg",
+    "subject": "red deer stag",
+    "category": "animal",
+    "species": "deer",
+    "attributes": [
+      "large antlers",
+      "reddish-brown coat",
+      "standing",
+      "profile view",
+      "forest background"
+    ],
+    "caption": "A red deer stag with impressive antlers stands in a grassy field against a backdrop of dense trees.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_016.jpg",
+    "subject": "grey wolf",
+    "category": "animal",
+    "species": "wolf",
+    "attributes": [
+      "standing",
+      "gray fur",
+      "looking at camera",
+      "solitary",
+      "forest background",
+      "wild"
+    ],
+    "caption": "A lone grey wolf stands in a misty boreal forest looking towards the viewer.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_017.jpg",
+    "subject": "wolf",
+    "category": "animal",
+    "species": "wolf",
+    "attributes": [
+      "furry",
+      "grey and tan fur",
+      "walking",
+      "snowy ground",
+      "forest background",
+      "amber eyes"
+    ],
+    "caption": "A wolf walking on snow-covered ground in a dark forest.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_018.jpg",
+    "subject": "wolf howling",
+    "category": "animal",
+    "species": "wolf",
+    "attributes": [
+      "light brown fur",
+      "howling",
+      "open mouth",
+      "standing on rocks",
+      "profile view",
+      "clear sky background"
+    ],
+    "caption": "A light-colored wolf stands on a rocky ridge with its head tilted back, howling towards the sky.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_019.jpg",
+    "subject": "red fox",
+    "category": "animal",
+    "species": "fox",
+    "attributes": [
+      "red fur",
+      "curled up",
+      "mossy roof",
+      "alert ears",
+      "fluffy",
+      "outdoors"
+    ],
+    "caption": "A red fox rests curled up on a mossy roof while looking back at the camera.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_020.jpg",
+    "subject": "yellow labrador retriever puppy",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "yellow coat",
+      "blue collar",
+      "sitting",
+      "looking up",
+      "dark background"
+    ],
+    "caption": "A yellow Labrador Retriever puppy wearing a blue collar sits looking up against a dark background.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_021.jpg",
+    "subject": "red deer stag",
+    "category": "animal",
+    "species": "deer",
+    "attributes": [
+      "large antlers",
+      "brown coat",
+      "profile view",
+      "standing",
+      "grassy field",
+      "pile of logs"
+    ],
+    "caption": "A red deer stag with large antlers stands in profile in a grassy field near a pile of fallen logs.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_022.jpg",
+    "subject": "cocker spaniel",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "golden fur",
+      "floppy ears",
+      "lying on back",
+      "white chest fur",
+      "grass background",
+      "happy expression"
+    ],
+    "caption": "A golden cocker spaniel lies on its back in green grass with its ears spread out wide.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_023.jpg",
+    "subject": "polar bear",
+    "category": "animal",
+    "species": "bear",
+    "attributes": [
+      "white fur",
+      "standing on hind legs",
+      "waving paw",
+      "snowy background",
+      "arctic landscape"
+    ],
+    "caption": "A polar bear standing on its hind legs and raising a paw in a snowy arctic environment.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_024.jpg",
+    "subject": "golden retriever puppy",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "golden retriever puppy",
+      "fluffy",
+      "colorful collar",
+      "green grass",
+      "cute",
+      "looking at camera"
+    ],
+    "caption": "A fluffy golden retriever puppy wearing a colorful patterned collar sits on green grass while looking up at the camera.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_025.jpg",
+    "subject": "red fox",
+    "category": "animal",
+    "species": "fox",
+    "attributes": [
+      "red fur",
+      "white chest",
+      "sitting",
+      "bushy tail",
+      "autumn leaves",
+      "forest background"
+    ],
+    "caption": "A red fox sits alertly on a grassy patch covered in autumn leaves against a dark forest backdrop.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_026.jpg",
+    "subject": "grizzly bear",
+    "category": "animal",
+    "species": "bear",
+    "attributes": [
+      "brown fur",
+      "standing in grass",
+      "framed by evergreen trees",
+      "misty mountain background",
+      "looking forward"
+    ],
+    "caption": "A brown bear stands on a grassy hillside surrounded by evergreen trees with a misty mountain in the background.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_027.jpg",
+    "subject": "red fox",
+    "category": "animal",
+    "species": "fox",
+    "attributes": [
+      "sleeping",
+      "curled up",
+      "orange fur",
+      "pointy ears",
+      "closed eyes"
+    ],
+    "caption": "A red fox lies sleeping peacefully curled up amongst tree roots.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_028.jpg",
+    "subject": "red fox",
+    "category": "animal",
+    "species": "fox",
+    "attributes": [
+      "leaping",
+      "mid-air",
+      "red fur",
+      "snowy field",
+      "dry grass"
+    ],
+    "caption": "A red fox leaps through the air in a snowy field with tall dried grass.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_029.jpg",
+    "subject": "red fox",
+    "category": "animal",
+    "species": "fox",
+    "attributes": [
+      "sitting",
+      "mossy log",
+      "reddish fur",
+      "bushy tail",
+      "forest background",
+      "alert posture"
+    ],
+    "caption": "A red fox rests atop a moss-covered log in a moody forest setting.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_030.jpg",
+    "subject": "red fox",
+    "category": "animal",
+    "species": "fox",
+    "attributes": [
+      "sitting",
+      "reddish-orange fur",
+      "bushy tail",
+      "pointy ears",
+      "black legs",
+      "sunlit",
+      "green grass"
+    ],
+    "caption": "A red fox sits alertly on a sunlit grassy lawn looking towards the viewer.",
+    "confidence": 0.98
+  },
+  {
+    "file_path": "corpus/img_031.jpg",
+    "subject": "red fox mother and kit",
+    "category": "animal",
+    "species": "fox",
+    "attributes": [
+      "red fur",
+      "affectionate",
+      "nuzzling",
+      "cute",
+      "outdoor setting",
+      "pointed ears"
+    ],
+    "caption": "A young fox kit nuzzles its mother in a grassy outdoor setting.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_032.jpg",
+    "subject": "elk",
+    "category": "animal",
+    "species": "elk",
+    "attributes": [
+      "large",
+      "brown",
+      "antlers",
+      "majestic",
+      "standing",
+      "profile"
+    ],
+    "caption": "A majestic elk with large antlers stands in profile against a hazy, overcast background.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_033.jpg",
+    "subject": "gray wolf",
+    "category": "animal",
+    "species": "wolf",
+    "attributes": [
+      "gray fur",
+      "alert eyes",
+      "pointed ears",
+      "walking forward",
+      "forested background",
+      "dark lighting",
+      "bushy fur",
+      "predator"
+    ],
+    "caption": "A gray wolf walks through a dark and grassy forest clearing, looking directly at the camera.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_034.jpg",
+    "subject": "mother bear and cub",
+    "category": "animal",
+    "species": "bear",
+    "attributes": [
+      "brown fur",
+      "climbing cub",
+      "large adult",
+      "woodland setting",
+      "standing next to tree"
+    ],
+    "caption": "A mother brown bear stands beside a large tree while her cub climbs on her back in a forest.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_035.jpg",
+    "subject": "coyote",
+    "category": "animal",
+    "species": "coyote",
+    "attributes": [
+      "camouflaged",
+      "gray fur",
+      "alert expression",
+      "wild",
+      "standing",
+      "partially obscured"
+    ],
+    "caption": "A coyote stands among dry winter brush and snow, looking directly at the camera.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_036.jpg",
+    "subject": "guanaco",
+    "category": "animal",
+    "species": "guanaco",
+    "attributes": [
+      "brown fur",
+      "grazing",
+      "long neck",
+      "slender legs",
+      "standing on grass",
+      "outdoors"
+    ],
+    "caption": "A guanaco is grazing on the grass near a road.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_037.jpg",
+    "subject": "two wolves",
+    "category": "animal",
+    "species": "wolf",
+    "attributes": [
+      "aggressive",
+      "snarling",
+      "gray",
+      "furry",
+      "teeth bared",
+      "outdoor",
+      "wild"
+    ],
+    "caption": "Two wolves interacting aggressively in a natural environment with one baring its teeth.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_038.jpg",
+    "subject": "rough collie dog",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "long-haired",
+      "brown and white",
+      "sitting",
+      "fluffy",
+      "leashed",
+      "alert"
+    ],
+    "caption": "A long-haired rough collie dog with a leash rests on a red brick patio near a potted plant.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_039.jpg",
+    "subject": "sika deer",
+    "category": "animal",
+    "species": "deer",
+    "attributes": [
+      "brown fur",
+      "alert ears",
+      "standing",
+      "outdoors",
+      "park setting",
+      "two deer"
+    ],
+    "caption": "Two sika deer stand in a park area with a person and a rickshaw in the background.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_040.jpg",
+    "subject": "cairn terrier",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "grey coat",
+      "shaggy fur",
+      "pointed ears",
+      "orange collar",
+      "sitting",
+      "profile view",
+      "outdoor"
+    ],
+    "caption": "A shaggy grey dog sits in the grass in front of a blooming pink tree.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_041.jpg",
+    "subject": "black bear",
+    "category": "animal",
+    "species": "bear",
+    "attributes": [
+      "black fur",
+      "side profile",
+      "brown muzzle",
+      "forest floor",
+      "standing on log",
+      "wild animal"
+    ],
+    "caption": "A black bear stands on a fallen log in a forested area.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_042.jpg",
+    "subject": "black bear",
+    "category": "animal",
+    "species": "bear",
+    "attributes": [
+      "black fur",
+      "climbing",
+      "rocky terrain",
+      "wild",
+      "outdoors",
+      "near water"
+    ],
+    "caption": "A black bear clings to a large mossy rock along the bank of a river surrounded by a lush forest.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_043.jpg",
+    "subject": "white wolf",
+    "category": "animal",
+    "species": "wolf",
+    "attributes": [
+      "white fur",
+      "thick coat",
+      "alert posture",
+      "standing",
+      "side profile",
+      "wild animal",
+      "outdoors"
+    ],
+    "caption": "A white wolf stands alert in a grassy field surrounded by foliage.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_044.jpg",
+    "subject": "culpeo fox",
+    "category": "animal",
+    "species": "fox",
+    "attributes": [
+      "sleeping",
+      "resting head on paw",
+      "brown and grey fur",
+      "pointed ears",
+      "lying on gravel",
+      "eyes closed",
+      "wild"
+    ],
+    "caption": "A culpeo fox is sleeping peacefully on a gravel path.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_045.jpg",
+    "subject": "corgi dog",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "corgi",
+      "brown and white",
+      "sitting",
+      "green harness",
+      "leash",
+      "alert expression",
+      "grass",
+      "outdoor"
+    ],
+    "caption": "A Corgi dog wearing a green harness sits on a green grass lawn.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_046.jpg",
+    "subject": "red fox",
+    "category": "animal",
+    "species": "fox",
+    "attributes": [
+      "reddish-brown fur",
+      "white chest",
+      "pointed ears",
+      "alert expression",
+      "lying down",
+      "black ear tips",
+      "black paws"
+    ],
+    "caption": "A red fox rests on a grey surface in front of green foliage.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_047.jpg",
+    "subject": "mule deer buck",
+    "category": "animal",
+    "species": "deer",
+    "attributes": [
+      "antlers",
+      "brown fur",
+      "large ears",
+      "standing",
+      "profile view",
+      "wildlife",
+      "golden hour lighting"
+    ],
+    "caption": "A mule deer buck stands alert in a grassy field during the golden hour.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_048.jpg",
+    "subject": "coyote",
+    "category": "animal",
+    "species": "coyote",
+    "attributes": [
+      "howling",
+      "sitting",
+      "furry",
+      "pointed ears",
+      "silhouette",
+      "full moon background",
+      "dusk sky",
+      "wild"
+    ],
+    "caption": "A coyote sits and howls toward a bright full moon in the twilight sky.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_049.jpg",
+    "subject": "brown bear",
+    "category": "animal",
+    "species": "bear",
+    "attributes": [
+      "brown fur",
+      "standing in water",
+      "looking down",
+      "reflective surface",
+      "mountainous background",
+      "snow-capped peaks",
+      "wilderness",
+      "daylight"
+    ],
+    "caption": "A brown bear stands in a shallow stream with snow-capped mountains in the background.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_050.jpg",
+    "subject": "red deer stag",
+    "category": "animal",
+    "species": "deer",
+    "attributes": [
+      "antlers",
+      "brown fur",
+      "standing",
+      "looking up",
+      "natural light",
+      "under tree"
+    ],
+    "caption": "A majestic stag with large antlers stands under the shade of a tree in a sunlit forest.",
+    "confidence": 1
+  },
+  {
+    "file_path": "corpus/img_051.jpg",
+    "subject": "white horse",
+    "category": "animal",
+    "species": "horse",
+    "attributes": [
+      "white",
+      "blurry",
+      "standing",
+      "low resolution",
+      "outdoor"
+    ],
+    "caption": "A blurry white horse stands in an outdoor area.",
+    "confidence": 0.6
+  },
+  {
+    "file_path": "corpus/img_052.jpg",
+    "subject": "mountain goat",
+    "category": "animal",
+    "species": "mountain goat",
+    "attributes": [
+      "white",
+      "shaggy",
+      "horned",
+      "standing",
+      "on mountain side",
+      "hairy",
+      "wild"
+    ],
+    "caption": "A mountain goat stands on a rocky mountain ledge.",
+    "confidence": 0.95
+  },
+  {
+    "file_path": "corpus/img_053.jpg",
+    "subject": "collie dog",
+    "category": "animal",
+    "species": "dog",
+    "attributes": [
+      "blurred",
+      "brown and white",
+      "long nose",
+      "floppy ears",
+      "portrait orientation"
+    ],
+    "caption": "A blurred portrait of a collie dog looking towards the camera against a plain background.",
+    "confidence": 0.8
+  },
+  {
+    "file_path": "corpus/img_054.jpg",
+    "subject": "deer",
+    "category": "animal",
+    "species": "deer",
+    "attributes": [
+      "brown fur",
+      "partially visible",
+      "outdoor",
+      "close-up",
+      "natural habitat"
+    ],
+    "caption": "A close-up view of the leg and body of a deer standing on grass.",
+    "confidence": 0.95
+  }
+]
