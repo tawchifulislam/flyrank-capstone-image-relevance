@@ -76,6 +76,6 @@ export async function tagImage(imageId) {
   }
 
   await markStatus(imageId, "failed");
-  console.error(`image ${imageId} failed after ${env.MAX_ATTEMPTS} attempts: ${lastError}`);
+  console.error(`ALERT image ${imageId} failed after ${env.MAX_ATTEMPTS} attempts: ${lastError}`);
   return { imageId, outcome: "failed", error: lastError };
 }
