@@ -9,7 +9,8 @@
     "migrate": "node scripts/migrate.js",
     "eval": "node scripts/eval.js",
     "seed": "node scripts/seed.js",
-    "export-tags": "node scripts/export-tags.js"
+    "export-tags": "node scripts/export-tags.js",
+    "up": "docker compose up -d --wait && npm run migrate && npm start"
   },
   "repository": {
     "type": "git",
