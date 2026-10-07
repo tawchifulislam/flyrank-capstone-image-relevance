@@ -131,8 +131,8 @@
       "title": "Training a corgi",
       "expected": "img_045.jpg",
       "got": "img_045.jpg",
-      "score": 0.9171,
-      "topScore": 0.9171,
+      "score": 0.9361,
+      "topScore": 0.9361,
       "accepted": [
         "dog"
       ],
@@ -155,8 +155,8 @@
       "title": "Coyote howling at the moon",
       "expected": "img_048.jpg",
       "got": "img_048.jpg",
-      "score": 0.9591,
-      "topScore": 0.9591,
+      "score": 0.9822,
+      "topScore": 0.9822,
       "accepted": [
         "coyote"
       ],
@@ -203,8 +203,8 @@
       "title": "Mule deer buck at dusk",
       "expected": "img_047.jpg",
       "got": "img_047.jpg",
-      "score": 0.9417,
-      "topScore": 0.9417,
+      "score": 0.959,
+      "topScore": 0.959,
       "accepted": [
         "deer",
         "elk"
