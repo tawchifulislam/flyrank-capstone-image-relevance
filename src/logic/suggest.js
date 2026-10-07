@@ -32,7 +32,7 @@ export async function suggestForPost(postId) {
   const ranked = rankCandidates(vector, await listImageCandidates()).slice(0, 5);
   const evaluated = ranked.map((c, i) => {
     const verdict = evaluateCandidate({
-      post: { species: detected.species, category: detected.category },
+      post: { species: detected.species, speciesSet: detected.speciesSet, category: detected.category },
       candidate: c,
       thresholds: thresholds(),
     });
@@ -64,7 +64,7 @@ export async function suggestForPost(postId) {
   const winner = evaluated.find((e) => e.verdict.passed);
   return {
     postId,
-    detected: { species: detected.species, score: detected.score, margin: detected.margin, bestGuess: detected.bestGuess },
+    detected: { species: detected.species, accepted: detected.speciesSet, score: detected.score, margin: detected.margin, bestGuess: detected.bestGuess },
     suggestion: winner ? view(winner) : null,
     message: winner ? "suggestion found" : "no confident match",
     reasons: winner ? [] : evaluated[0]?.verdict.reasons ?? ["no candidates available"],
@@ -80,7 +80,7 @@ export async function checkForcedImage(postId, imageId) {
 
   const score = cosine(loaded.vector, candidate.embedding);
   const verdict = evaluateCandidate({
-    post: { species: loaded.detected.species, category: loaded.detected.category },
+    post: { species: loaded.detected.species, speciesSet: loaded.detected.speciesSet, category: loaded.detected.category },
     candidate: { ...candidate, score },
     thresholds: thresholds(),
   });

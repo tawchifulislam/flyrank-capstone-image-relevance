@@ -1,0 +1,34 @@
+{
+  "cases": [
+    { "title": "A fox mother and her kit", "body": "A mother red fox nuzzles her young kit in the grass, showing the bond between parent and offspring.", "expectedImage": "img_031.jpg" },
+    { "title": "Polar bear on its hind legs", "body": "A polar bear stands up on its hind legs and raises a paw while scanning the icy surroundings.", "expectedImage": "img_023.jpg" },
+    { "title": "Black bear climbing a mossy rock", "body": "A black bear clings to a large mossy rock beside a river bank.", "expectedImage": "img_042.jpg" },
+    { "title": "Arctic wolf in the snow", "body": "A white arctic wolf stands proudly on a snow dusted rock in the cold.", "expectedImage": "img_005.jpg" },
+    { "title": "Why wolves howl", "body": "A wolf stands on a rocky ridge with its head raised, howling to communicate with its pack.", "expectedImage": "img_018.jpg" },
+    { "title": "Sika deer in a city park", "body": "Two sika deer stand in a park, close to people and a path.", "expectedImage": "img_039.jpg" },
+    { "title": "Meet the fawn", "body": "A young spotted fawn stands alert with one front leg raised at the edge of the woods.", "expectedImage": "img_009.jpg" },
+    { "title": "Elk and their antlers", "body": "A majestic elk with large antlers stands in profile in a hazy landscape.", "expectedImage": "img_032.jpg" },
+    { "title": "Guanaco grazing by the roadside", "body": "A guanaco grazes on grass beside a road in the Andes.", "expectedImage": "img_036.jpg" },
+    { "title": "Training a corgi", "body": "A corgi in a green harness sits patiently on the grass during a training session.", "expectedImage": "img_045.jpg" },
+    { "title": "Jack Russell terrier portrait", "body": "A close-up studio portrait of a tricolor Jack Russell terrier.", "expectedImage": "img_014.jpg" },
+    { "title": "Coyote howling at the moon", "body": "A coyote sits and howls toward a bright full moon at twilight.", "expectedImage": "img_048.jpg" },
+    { "title": "A sleeping fox", "body": "A red fox lies sleeping peacefully, curled up among trees.", "expectedImage": "img_027.jpg" },
+    { "title": "A fox leaping through snow", "body": "A red fox leaps through the air across a snowy field while hunting.", "expectedImage": "img_028.jpg" },
+    { "title": "Retrievers at the beach", "body": "A reddish brown duck tolling retriever runs through breaking waves on the shore.", "expectedImage": "img_007.jpg" },
+    { "title": "Mule deer buck at dusk", "body": "A mule deer buck stands alert in a grassy field.", "expectedImage": "img_047.jpg" }
+  ],
+  "synonymCases": [
+    { "title": "Vulpes vulpes in the wild", "body": "Notes on the wild fox species Vulpes vulpes and its habitat.", "expectedSpecies": "fox" },
+    { "title": "Canis lupus social structure", "body": "How Canis lupus packs are organised and how they hunt together.", "expectedSpecies": "wolf" },
+    { "title": "Ursus arctos feeding habits", "body": "What Ursus arctos eats across the seasons.", "expectedSpecies": "bear" }
+  ],
+  "noMatchCases": [
+    { "title": "Best budget laptops for students", "body": "A comparison of affordable laptops with good battery life." },
+    { "title": "How to bake sourdough bread", "body": "A beginner guide to starter, folding and baking a crusty loaf." },
+    { "title": "Giraffes of the African savanna", "body": "Tall giraffes browse acacia trees across the open savanna." }
+  ],
+  "forcedCases": [
+    { "postTitle": "A sleeping fox", "image": "img_005.jpg", "expect": "rejected" },
+    { "postTitle": "Training a corgi", "image": "img_016.jpg", "expect": "rejected" }
+  ]
+}

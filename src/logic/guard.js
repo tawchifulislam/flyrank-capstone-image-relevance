@@ -17,13 +17,15 @@ export function evaluateCandidate({ post, candidate, thresholds }) {
     );
   }
 
-  if (!post.species) {
+  const expectedSet = post.speciesSet && post.speciesSet.length > 0 ? post.speciesSet : post.species ? [post.species] : [];
+
+  if (expectedSet.length === 0) {
     reasons.push("No known subject detected in the post, so no image subject can be matched");
   } else if (post.category !== candidate.category) {
     reasons.push(`Category mismatch: expected ${post.category}, detected ${candidate.category}`);
-  } else if (post.species !== candidate.species) {
+  } else if (!expectedSet.includes(candidate.species)) {
     reasons.push(
-      `${capitalize(post.category)} category mismatch: expected ${post.species}, detected ${candidate.species}`
+      `${capitalize(post.category)} category mismatch: expected ${expectedSet.join(" or ")}, detected ${candidate.species}`
     );
   }
 

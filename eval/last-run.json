@@ -1,0 +1,342 @@
+{
+  "summary": {
+    "top1Precision": 1,
+    "top1Correct": 16,
+    "top1Total": 16,
+    "heldOutPrecision": 1,
+    "heldOutCorrect": 5,
+    "heldOutTotal": 5,
+    "synonymCorrect": "3/3",
+    "noMatchCorrect": "2/3",
+    "forcedRejected": "2/2",
+    "thresholds": {
+      "minSimilarity": 0.78,
+      "minImageConfidence": 0.9,
+      "speciesMinScore": 0.76,
+      "speciesAmbiguityBand": 0.025
+    }
+  },
+  "rows": [
+    {
+      "kind": "top1",
+      "title": "A fox mother and her kit",
+      "expected": "img_031.jpg",
+      "got": "img_031.jpg",
+      "score": 0.9732,
+      "topScore": 0.9732,
+      "accepted": [
+        "fox"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Polar bear on its hind legs",
+      "expected": "img_023.jpg",
+      "got": "img_023.jpg",
+      "score": 0.956,
+      "topScore": 0.956,
+      "accepted": [
+        "bear"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Black bear climbing a mossy rock",
+      "expected": "img_042.jpg",
+      "got": "img_042.jpg",
+      "score": 0.9744,
+      "topScore": 0.9744,
+      "accepted": [
+        "bear"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Arctic wolf in the snow",
+      "expected": "img_005.jpg",
+      "got": "img_005.jpg",
+      "score": 0.9682,
+      "topScore": 0.9682,
+      "accepted": [
+        "wolf"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Why wolves howl",
+      "expected": "img_018.jpg",
+      "got": "img_018.jpg",
+      "score": 0.9353,
+      "topScore": 0.9353,
+      "accepted": [
+        "wolf"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Sika deer in a city park",
+      "expected": "img_039.jpg",
+      "got": "img_039.jpg",
+      "score": 0.9459,
+      "topScore": 0.9459,
+      "accepted": [
+        "deer"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Meet the fawn",
+      "expected": "img_009.jpg",
+      "got": "img_009.jpg",
+      "score": 0.9734,
+      "topScore": 0.9734,
+      "accepted": [
+        "deer",
+        "elk"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Elk and their antlers",
+      "expected": "img_032.jpg",
+      "got": "img_032.jpg",
+      "score": 0.9757,
+      "topScore": 0.9757,
+      "accepted": [
+        "elk"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Guanaco grazing by the roadside",
+      "expected": "img_036.jpg",
+      "got": "img_036.jpg",
+      "score": 0.95,
+      "topScore": 0.95,
+      "accepted": [
+        "guanaco"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Training a corgi",
+      "expected": "img_045.jpg",
+      "got": "img_045.jpg",
+      "score": 0.9171,
+      "topScore": 0.9171,
+      "accepted": [
+        "dog"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Jack Russell terrier portrait",
+      "expected": "img_014.jpg",
+      "got": "img_014.jpg",
+      "score": 0.9627,
+      "topScore": 0.9627,
+      "accepted": [
+        "dog"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Coyote howling at the moon",
+      "expected": "img_048.jpg",
+      "got": "img_048.jpg",
+      "score": 0.9591,
+      "topScore": 0.9591,
+      "accepted": [
+        "coyote"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "A sleeping fox",
+      "expected": "img_027.jpg",
+      "got": "img_027.jpg",
+      "score": 0.9636,
+      "topScore": 0.9636,
+      "accepted": [
+        "fox"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "A fox leaping through snow",
+      "expected": "img_028.jpg",
+      "got": "img_028.jpg",
+      "score": 0.9584,
+      "topScore": 0.9584,
+      "accepted": [
+        "fox"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Retrievers at the beach",
+      "expected": "img_007.jpg",
+      "got": "img_007.jpg",
+      "score": 0.9363,
+      "topScore": 0.9363,
+      "accepted": [
+        "dog"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "top1",
+      "title": "Mule deer buck at dusk",
+      "expected": "img_047.jpg",
+      "got": "img_047.jpg",
+      "score": 0.9417,
+      "topScore": 0.9417,
+      "accepted": [
+        "deer",
+        "elk"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "held-out",
+      "title": "A white wolf watching a field",
+      "expected": "img_043.jpg",
+      "got": "img_043.jpg",
+      "score": 0.9597,
+      "topScore": 0.9597,
+      "accepted": [
+        "wolf"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "held-out",
+      "title": "Winter life of the coyote",
+      "expected": "img_035.jpg",
+      "got": "img_035.jpg",
+      "score": 0.9739,
+      "topScore": 0.9739,
+      "accepted": [
+        "coyote"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "held-out",
+      "title": "Cairn terrier in the garden",
+      "expected": "img_040.jpg",
+      "got": "img_040.jpg",
+      "score": 0.9501,
+      "topScore": 0.9501,
+      "accepted": [
+        "dog"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "held-out",
+      "title": "Cocker spaniel playing in the grass",
+      "expected": "img_022.jpg",
+      "got": "img_022.jpg",
+      "score": 0.9598,
+      "topScore": 0.9598,
+      "accepted": [
+        "dog"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "held-out",
+      "title": "Deer grazing under Half Dome",
+      "expected": "img_002.jpg",
+      "got": "img_002.jpg",
+      "score": 0.9793,
+      "topScore": 0.9793,
+      "accepted": [
+        "deer",
+        "elk"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "synonym",
+      "title": "Vulpes vulpes in the wild",
+      "expectedSpecies": "fox",
+      "gotSpecies": "fox",
+      "ok": true
+    },
+    {
+      "kind": "synonym",
+      "title": "Canis lupus social structure",
+      "expectedSpecies": "wolf",
+      "gotSpecies": "wolf",
+      "ok": true
+    },
+    {
+      "kind": "synonym",
+      "title": "Ursus arctos feeding habits",
+      "expectedSpecies": "bear",
+      "gotSpecies": "bear",
+      "ok": true
+    },
+    {
+      "kind": "no_match",
+      "title": "Best budget laptops for students",
+      "ok": true,
+      "reasons": [
+        "Similarity 0.73 is below threshold 0.78",
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "How to bake sourdough bread",
+      "ok": true,
+      "reasons": [
+        "Similarity 0.73 is below threshold 0.78",
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "Giraffes of the African savanna",
+      "ok": false,
+      "reasons": []
+    },
+    {
+      "kind": "forced",
+      "postTitle": "A sleeping fox",
+      "image": "img_005.jpg",
+      "result": "rejected",
+      "reasons": [
+        "Animal category mismatch: expected fox, detected wolf"
+      ],
+      "ok": true
+    },
+    {
+      "kind": "forced",
+      "postTitle": "Training a corgi",
+      "image": "img_016.jpg",
+      "result": "rejected",
+      "reasons": [
+        "Similarity 0.77 is below threshold 0.78",
+        "Animal category mismatch: expected dog, detected wolf"
+      ],
+      "ok": true
+    }
+  ]
+}

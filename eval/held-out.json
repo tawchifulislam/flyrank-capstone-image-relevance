@@ -1,0 +1,27 @@
+[
+  {
+    "title": "A white wolf watching a field",
+    "body": "A white wolf stands alert in a grassy field surrounded by trees.",
+    "expectedImage": "img_043.jpg"
+  },
+  {
+    "title": "Winter life of the coyote",
+    "body": "A coyote stands among dry winter brush and snow, looking straight at the camera.",
+    "expectedImage": "img_035.jpg"
+  },
+  {
+    "title": "Cairn terrier in the garden",
+    "body": "A shaggy grey cairn terrier sits in the grass in front of blooming flowers.",
+    "expectedImage": "img_040.jpg"
+  },
+  {
+    "title": "Cocker spaniel playing in the grass",
+    "body": "A golden cocker spaniel lies on its back in green grass.",
+    "expectedImage": "img_022.jpg"
+  },
+  {
+    "title": "Deer grazing under Half Dome",
+    "body": "Two deer graze in a grassy meadow with a granite dome rising in the background.",
+    "expectedImage": "img_002.jpg"
+  }
+]

@@ -39,9 +39,13 @@ export async function detectSubject(postVector) {
   const best = scored[0];
   const second = scored[1];
   const margin = second ? best.score - second.score : best.score;
-  const confident = best.score >= env.SPECIES_MIN_SCORE && margin >= env.SPECIES_MIN_MARGIN;
+  const confident = best.score >= env.SPECIES_MIN_SCORE;
+  const speciesSet = confident
+    ? scored.filter((s) => s.score >= best.score - env.SPECIES_AMBIGUITY_BAND && s.category === best.category).map((s) => s.species)
+    : [];
   return {
     species: confident ? best.species : null,
+    speciesSet,
     category: confident ? best.category : null,
     score: Number(best.score.toFixed(4)),
     margin: Number(margin.toFixed(4)),

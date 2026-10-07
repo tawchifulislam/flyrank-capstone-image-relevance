@@ -16,7 +16,7 @@ const schema = z.object({
   VISION_OUTPUT_USD_PER_M: z.coerce.number().min(0).default(2.5),
   MAX_ATTEMPTS: z.coerce.number().int().min(1).max(5).default(3),
   SPECIES_MIN_SCORE: z.coerce.number().min(0).max(1).default(0.76),
-  SPECIES_MIN_MARGIN: z.coerce.number().min(0).max(1).default(0.02),
+  SPECIES_AMBIGUITY_BAND: z.coerce.number().min(0).max(1).default(0.025),
   EMBEDDING_INPUT_USD_PER_M: z.coerce.number().min(0).default(0.15),
   INTER_CALL_DELAY_MS: z.coerce.number().int().min(0).default(4000),
 });
