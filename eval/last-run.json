@@ -7,12 +7,12 @@
     "heldOutCorrect": 5,
     "heldOutTotal": 5,
     "synonymCorrect": "3/3",
-    "noMatchCorrect": "2/3",
+    "noMatchCorrect": "12/12",
     "forcedRejected": "2/2",
     "thresholds": {
       "minSimilarity": 0.78,
       "minImageConfidence": 0.9,
-      "speciesMinScore": 0.76,
+      "speciesMinScore": 0.8,
       "speciesAmbiguityBand": 0.025
     }
   },
@@ -314,8 +314,83 @@
     {
       "kind": "no_match",
       "title": "Giraffes of the African savanna",
-      "ok": false,
-      "reasons": []
+      "ok": true,
+      "reasons": [
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "Lions of the Serengeti",
+      "ok": true,
+      "reasons": [
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "Zebra stripes explained",
+      "ok": true,
+      "reasons": [
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "Penguins on the ice",
+      "ok": true,
+      "reasons": [
+        "Similarity 0.78 is below threshold 0.78",
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "Kangaroos in the outback",
+      "ok": true,
+      "reasons": [
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "Wild horses on the plains",
+      "ok": true,
+      "reasons": [
+        "Animal category mismatch: expected horse, detected deer"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "Elephants at the waterhole",
+      "ok": true,
+      "reasons": [
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "Hippos in the river",
+      "ok": true,
+      "reasons": [
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "Owls hunting at night",
+      "ok": true,
+      "reasons": [
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
+    },
+    {
+      "kind": "no_match",
+      "title": "Dolphins leaping from the sea",
+      "ok": true,
+      "reasons": [
+        "No known subject detected in the post, so no image subject can be matched"
+      ]
     },
     {
       "kind": "forced",

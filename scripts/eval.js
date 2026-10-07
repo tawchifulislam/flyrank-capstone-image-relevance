@@ -26,6 +26,7 @@ async function ensurePost({ title, body }) {
 
 const set = JSON.parse(await readFile('eval/eval-set.json', 'utf8'));
 const heldOut = JSON.parse(await readFile('eval/held-out.json', 'utf8'));
+const heldNoMatch = JSON.parse(await readFile("eval/held-out-no-match.json", "utf8"));
 const rows = [];
 
 async function runTop1(kind, cases) {
@@ -75,7 +76,7 @@ for (const c of set.synonymCases) {
 }
 
 let noMatchOk = 0;
-for (const c of set.noMatchCases) {
+for (const c of [...set.noMatchCases, ...heldNoMatch]) {
   const id = await ensurePost(c);
   const result = await suggestForPost(id);
   const ok = result.suggestion === null;
@@ -119,7 +120,7 @@ const summary = {
   heldOutCorrect: heldCorrect,
   heldOutTotal: heldOut.length,
   synonymCorrect: `${synOk}/${set.synonymCases.length}`,
-  noMatchCorrect: `${noMatchOk}/${set.noMatchCases.length}`,
+  noMatchCorrect: `${noMatchOk}/${set.noMatchCases.length + heldNoMatch.length}`,
   forcedRejected: `${forcedOk}/${set.forcedCases.length}`,
   thresholds: {
     minSimilarity: env.MIN_SIMILARITY,
