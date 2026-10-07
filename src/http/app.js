@@ -4,6 +4,7 @@ import { imagesRouter } from "./imagesRoutes.js";
 import { jobsRouter } from "./jobsRoutes.js";
 import { postsRouter } from "./postsRoutes.js";
 import { suggestionsRouter } from "./suggestionsRoutes.js";
+import { costsRouter } from "./costsRoutes.js";
 import { inngest } from "../jobs/client.js";
 import { processImages } from "../jobs/processImages.js";
 
@@ -16,6 +17,7 @@ app.use("/images", imagesRouter);
 app.use("/jobs", jobsRouter);
 app.use("/posts", postsRouter);
 app.use("/suggestions", suggestionsRouter);
+app.use("/costs", costsRouter);
 
 app.use((req, res) => res.status(404).json({ error: "not_found" }));
 

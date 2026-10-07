@@ -16,6 +16,7 @@ async function loadLabelVectors() {
     const { values, inputTokens } = await embedText(`A photo of a ${s.species}`);
     await insertCost({
       callType: "embedding",
+      label: "species_label",
       model: env.EMBEDDING_MODEL,
       inputTokens,
       outputTokens: 0,
