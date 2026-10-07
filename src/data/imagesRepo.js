@@ -30,3 +30,15 @@ export async function listImages({ status, limit, offset }) {
   );
   return rows;
 }
+
+export async function listPendingIds() {
+  const { rows } = await pool.query("SELECT id FROM images WHERE status = 'pending' ORDER BY id");
+  return rows.map((r) => r.id);
+}
+
+export async function countByStatus() {
+  const { rows } = await pool.query("SELECT status, COUNT(*)::int AS count FROM images GROUP BY status");
+  const counts = { pending: 0, tagged: 0, flagged: 0, failed: 0 };
+  for (const row of rows) counts[row.status] = row.count;
+  return counts;
+}

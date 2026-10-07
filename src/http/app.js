@@ -1,11 +1,17 @@
 import express from "express";
+import { serve } from "inngest/express";
 import { imagesRouter } from "./imagesRoutes.js";
+import { jobsRouter } from "./jobsRoutes.js";
+import { inngest } from "../jobs/client.js";
+import { processImages } from "../jobs/processImages.js";
 
 export const app = express();
 
 app.use(express.json());
 app.get("/health", (req, res) => res.json({ status: "ok" }));
+app.use("/api/inngest", serve({ client: inngest, functions: [processImages] }));
 app.use("/images", imagesRouter);
+app.use("/jobs", jobsRouter);
 
 app.use((req, res) => res.status(404).json({ error: "not_found" }));
 

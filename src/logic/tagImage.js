@@ -7,11 +7,21 @@ import { insertCost, sumCostToday } from "../data/costRepo.js";
 
 const MIME = { ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp" };
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 function costOf(usage) {
   return (
     (usage.inputTokens / 1_000_000) * env.VISION_INPUT_USD_PER_M +
     (usage.outputTokens / 1_000_000) * env.VISION_OUTPUT_USD_PER_M
   );
+}
+
+function isDailyQuota(message) {
+  return message.includes("PerDay");
+}
+
+function isTransient(message) {
+  return message.includes('"code":429') || message.includes('"code":503');
 }
 
 export async function tagImage(imageId) {
@@ -34,8 +44,12 @@ export async function tagImage(imageId) {
       result = await describeImage({ base64, mimeType });
     } catch (err) {
       lastError = err.message;
+      if (isDailyQuota(lastError)) {
+        await insertJobRun({ imageId, attempt, status: "quota_stopped", error: "daily model quota reached" });
+        return { imageId, outcome: "quota_stopped" };
+      }
       await insertJobRun({ imageId, attempt, status: "error", error: lastError });
-      await new Promise((r) => setTimeout(r, 1000 * 2 ** (attempt - 1)));
+      await sleep((isTransient(lastError) ? 8000 : 1000) * 2 ** (attempt - 1));
       continue;
     }
 
@@ -57,6 +71,7 @@ export async function tagImage(imageId) {
     const status = result.data.confidence < env.LOW_CONFIDENCE ? "flagged" : "tagged";
     await saveTags({ imageId, metadata: result.data, status });
     await insertJobRun({ imageId, attempt, status: "ok" });
+    await sleep(env.INTER_CALL_DELAY_MS);
     return { imageId, outcome: status, metadata: result.data };
   }
 
