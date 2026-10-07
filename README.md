@@ -152,6 +152,7 @@ Every vision and embedding call writes a row to `cost_log` and is visible at `GE
 - **Scale.** Vectors are stored as arrays and compared in application code. That is fine at this size and not for thousands of images, where pgvector would be the next step.
 - **No frontend and no authentication.** The review workflow is API only.
 - **Single tenant.** One shared image library and one set of posts. There is no tenant isolation.
+- **Budget guard is untested in a live run.** The daily budget stop (`DAILY_BUDGET_USD`, outcome `budget_stopped`) is implemented in `src/logic/tagImage.js`, but only the quota stop and the retry path were exercised in test runs.
 
 ## Repository layout
 
