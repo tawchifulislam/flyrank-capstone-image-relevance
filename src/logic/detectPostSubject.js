@@ -33,3 +33,18 @@ export async function scoreSpecies(postVector) {
     .map((l) => ({ species: l.species, category: l.category, score: cosine(postVector, l.vector) }))
     .sort((a, b) => b.score - a.score);
 }
+
+export async function detectSubject(postVector) {
+  const scored = await scoreSpecies(postVector);
+  const best = scored[0];
+  const second = scored[1];
+  const margin = second ? best.score - second.score : best.score;
+  const confident = best.score >= env.SPECIES_MIN_SCORE && margin >= env.SPECIES_MIN_MARGIN;
+  return {
+    species: confident ? best.species : null,
+    category: confident ? best.category : null,
+    score: Number(best.score.toFixed(4)),
+    margin: Number(margin.toFixed(4)),
+    bestGuess: best.species,
+  };
+}

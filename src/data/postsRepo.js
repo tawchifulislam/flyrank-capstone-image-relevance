@@ -31,3 +31,10 @@ export async function listImageCandidates() {
   );
   return rows;
 }
+
+export async function updatePostSubject(id, { subject, category, species }) {
+  await pool.query(
+    "UPDATE posts SET subject = $2, category = $3, species = $4 WHERE id = $1",
+    [id, subject, category, species]
+  );
+}
