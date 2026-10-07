@@ -127,3 +127,11 @@ HTTP code never touches SQL. Logic code never calls the network directly. The gu
 ## 11. Explicit non-goal
 
 No frontend. The review workflow is API endpoints only.
+
+## 12. Changes made during implementation
+
+- Post subject detection uses embeddings instead of a vision model call. Each known species name is embedded once and compared with the post embedding. A species is accepted only when its score is at least `SPECIES_MIN_SCORE` and it leads the second best by at least `SPECIES_MIN_MARGIN`. This avoids spending the free tier's small daily request quota on posts. Measured on sample posts, relevant posts scored 0.78 to 0.87 with margins of 0.03 or more, and unrelated posts scored 0.72 to 0.74 with margins near 0.002.
+- When no species is detected, the guard rejects every candidate with the reason "No known subject detected in the post".
+- The vision model is `gemini-3.8-flash`. The free tier allows 20 requests per model per day, so the batch job stops early with `quota_stopped` on a daily quota error and leaves the remaining images `pending` so they can be resumed later.
+- Review API additions: a guard-rejected suggestion cannot be approved, and a reviewed suggestion cannot change its decision.
+- Cost is recorded per call in `cost_log`, and embedding token counts are estimated from text length.
